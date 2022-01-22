@@ -1,57 +1,48 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 2</title>
+    <title>My Resume</title>
 </head>
+<body bgcolor="lightGray">
 
-<body bgcolor="orange">
+<table border="1" align="center" width="60%">
+<tr>
+<th> <h1>Welcome To My Resume </h1></th>
 
-    <table border="1" align="center" width="65%">
-        <tr>
-            <th>
-                <h1>Assignment 2 </h1>
+<tr> <th align="left"> <h2> Rufaeel Asad </h2>
+    <img src="Rufaeel.png" align="right" height="150" width="150" border="1"/>
+<b> Android Developer</b> <br>
++923325404002<br> <br>
+rufaeelasad@gmail.com<br><br>
+<h2> Personal Information: </h2>
+<ul>
+<li> Age : 23</li>
+<li> Nationality : Pakistani</li>
+<li> CNIC : XXXXXXXXX</li>
+<li> Martial Status: Single</li>
 
-            </th>
-
-        <tr>
-            <th align="left">
-                
-                <h1>Password Checker</h1>
-                <h2> Enter Password </h2>
-                <input type="password" id="pwd">
-                <button onclick="submit()">Submit</button>
-                <h2 id="result"> </h2>
-
-            </th>
-        </tr>
-    </table>
+</ul>
 
 
-    <script>
+<h2> Qualification</h2>
 
-        function submit() {
-            var EnteredPassword = document.getElementById("pwd").value;
-            var RealPassword = 1234;
-            var result;
-            if (EnteredPassword == RealPassword) {
-                result = "Password Matched";
+<li> BSCS   2019 - onwards</li>
+<li> F.S.C    2019</li>
+<li> Matric   2016</li>
 
-                document.getElementById("result").innerHTML = result;
-            }
+<h2>Skills</h2>
 
-            else {
-                result = "Invalid Password ! Try Again ";
-                document.getElementById("result").innerHTML = result;
-            }  
-        }
+<li> Android Development</li>
+<li> Java </li>
+<li> Python</li>
 
 
 
-    </script>
+</th>
+</tr>
+</table>
 </body>
-
 </html>
