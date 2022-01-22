@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // var items = ["ALi Raza" , "Science" , true, 2231];
+        // items[0];
+
+        // var student = { 
+        //     name: "ALi Raza",
+        //     isActive: true,
+        //     pinNumber: 2231,
+        //     subjects : ["Networking" , "Ai" , "ChatBot"],
+        //     teacher: {
+        //         name: "Malik",
+        //         rank: "senoir instructor",
+        //         batchNumber: 23223
+        //     }
+
+        // }
+
+        // student.name = "Mobeen";
+        //     console.log("student.name" , student.name);
+        //     console.log("student.isActive" , student.isActive);
+        //     console.log("student.pinNumber" , student.pinNumber);
+        //     console.log("student.subjects" , student.subjects[0]);
+        //     console.log("student.teacher" , student.teacher.rank);
+        //     console.log("student.teacher" , student.teacher[0]);
+
+        //     student.teacher.rank = "H.O.D";
+
+
+
+        var student = { 
+            name: "ALi Raza",
+            isActive: true,
+            pinNumber: 2231,
+            subjects : ["Networking" , "Ai" , "ChatBot"],
+            teacher: {
+                name: "Malik",
+                rank: "senoir instructor",
+                batchNumber: 23223
+            }
+
+        }
+
+        // es5
+        // // var copy = {...student} ;
+
+
+        // es5 
+        var copy = Object.assign({} , student);
+
+        console.log("Student.Name: " ,student.name);
+        console.log("Copy.Name: " , copy.name);
+
+
+        copy.name = "Malik ";
+
+        console.log("Student.Name" , student.name);
+        console.log("Copy.Name" , copy.name);
+
+
+       
+
+
+
+    </script>
+    
+</body>
+</html>
