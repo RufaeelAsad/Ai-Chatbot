@@ -38,6 +38,19 @@
 
             //   https://api.openweathermap.org/data/2.5/weather?q=karachi&appid=b549acf389972fa9ada20f3205a434f8&units=metric
 
+            axios.get('https://api.openweathermap.org/data/2.5/weather?q=karachi&appid=b549acf389972fa9ada20f3205a434f8&units=metric')
+            .then(function (response) {
+                
+                var result = response.data;
+                console.log("result: " , result);
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+            .then(function () {
+                // always executed
+            });
 
             var temp = document.getElementById("temp").value;
 
@@ -82,19 +95,7 @@
 
 
 
-        axios.get('https://api.openweathermap.org/data/2.5/weather?q=karachi&appid=b549acf389972fa9ada20f3205a434f8&units=metric')
-            .then(function (response) {
-                
-                var result = response.data;
-                console.log("result: " , result);
-            })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            })
-            .then(function () {
-                // always executed
-            });
+
 
 
 
